@@ -1,7 +1,9 @@
 
-# ♥️ End-of-Study Questionnaire
+♥️ End-of-Study Questionnaire
 
 All 1–7 (disagree→agree) unless noted.
+
+## User Interface 
 
 ### Effectiveness
 - The comments helped me think more carefully about posts.
@@ -22,26 +24,28 @@ All 1–7 (disagree→agree) unless noted.
 - ***Productive:***
 	- The effort felt worthwhile. 
 	- It made me think productively. 
-	- I stayed focused on the real issues. `TODO: Correct?`
+	- The comments gave me something worth thinking about.
 - ***Wasted:***
 	- The tool often felt confusing.
 	- I spent effort on things that didn't matter.
 	- The layout/comments got in the way.
 
+## Patterns
 
-## Behavior change outside the study
+### Behavior change outside the study (3 items + open text)
 - I've noticed myself pausing before reacting to posts.
 - I've questioned online claims more than before.
 - I've changed how I reply to people online.
 - What changed, briefly? `[open text]`
 
-## Trust 
-- I trusted the agents' factual claims. (1–7, reverse-scored)
-- I noticed the agents making mistakes. (1–7) `TODO: The agents make too much mistakes`
+### Trust (2 separate single items — do NOT combine)
+- I trusted the agents' factual claims. (1–7)
+- I noticed the agents making mistakes. (1–7)
 - Describe any comment you flagged, and why. `[open text]`
 
+> Note: The first two items measure different things (trust level vs. catching errors), so they stay separate singles, scored as-is. Reverse-scoring only helps inside a multi-item scale, and there's no scale here.
 
-## Role-level usefulness 
+### Role-level usefulness 
 
 (1=not useful, 7=very useful)
 
@@ -54,7 +58,7 @@ TODO:
 - Pointed at what the post emphasized or hid: ___
 ```
 
-# ♥️ Interview Guide (~15 min, recorded)
+## ♥️ Interview Guide (~15 min, recorded)
 
 Fixed core questions — follow interesting answers with probes.
 
