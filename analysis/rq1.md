@@ -7,8 +7,8 @@
 **Contents** 
 1. 🚀 Before you start 
 2. 🚀 Pseudocode
-3. 🚀 R code
-4. 🚀 Reading the results 
+3. 🚀 Reading the results  
+4. 🚀 R code
 
 # 🚀 1. Before you start
 
@@ -143,9 +143,9 @@ fit_mixed_model(
 
 ```
 fit_mixed_model(
-    predict:      ic_score
-    from:         response_type + post_id
-    separate_out:    each participant has own baseline
+    predict:        ic_score
+    from:           response_type + post_id
+    separate_out:   each participant has own baseline
 )
 ```
 
@@ -157,8 +157,64 @@ fit_mixed_model(
 - If raw were **much higher** than sensitivity: part of the "effect" was really differences *between* posts leaking in, not revisiting. Weaker.
 - If raw were **much lower** than sensitivity: post-to-post differences were *hiding* a real effect that shows once you control for them.
 
+# 🚀 3. Reading the results
 
-# 🚀 3. R code
+## Final report — put the three side by side
+
+📝 **NOTE:** 
+```
+RAW              +0.62   p = .002    d = 0.38
+LENGTH-ADJUSTED  +0.38   p = .041
+SENSITIVITY      +0.74   p < .001
+```
+
+
+## Decision table — what the combination means
+
+| Model 1 (raw) | Model 2 (length-adj) | Verdict |
+|---|---|---|
+| significant `+` | still significant `+` | **Strong support.** IC gain is real and not just longer writing. |
+| significant `+` | shrinks, still significant | **Support, partly length.** Some gain is writing more; a real effect remains. |
+| significant `+` | drops to ~0, not significant | **Weak.** The IC bump was mostly writing more. |
+| not significant | — | **No evidence** of an IC change. |
+
+Then Model 3 is the tie-breaker on trust: if it agrees with Model 1, you're solid. (`+` means positive `estimate`)
+
+Recall: **"Significant" always means `p < .05`.** Nothing else. It means "probably not luck." It does *not* mean big or important — that's what Cohen's d is for.
+
+
+## Example outputs (4 cases)
+
+**Case A — Real effect, survives length (supports RQ1)**
+```
+RAW              estimate = +0.62   p = .002    d = 0.38
+LENGTH-ADJUSTED  estimate = +0.38   p = .04
+```
+> Revisited scored 0.62 IC points higher. After matching for length it's still +0.38 and significant. Some of the gain is writing more — but not all. **Supports RQ1.**
+
+**Case B — Gain was mostly length (honest near-null)**
+```
+RAW              estimate = +0.55   p = .01     d = 0.32
+LENGTH-ADJUSTED  estimate = +0.08   p = .60
+```
+> The raw bump vanishes once you match for length. The IC gain came from people writing more, not reasoning deeper. **Weak / no real effect.**
+
+**Case C — Just noise**
+```
+RAW              estimate = +0.05   p = .78     d = 0.03
+```
+> Basically zero, and the p-value says it's easily luck. **No evidence for RQ1.** (No need to read Model 2 closely — there's nothing to explain.)
+
+**Case D — Fully robust**
+```
+RAW              estimate = +0.78   p < .001    d = 0.55
+LENGTH-ADJUSTED  estimate = +0.51   p = .008
+SENSITIVITY      estimate = +0.74   p < .001
+```
+> Big medium-sized gain, holds after length adjustment, holds when posts are fixed. **Strong, robust support for RQ1.**
+
+
+# 🚀 4. R code
 
 **How to read this section.** Four kinds of block, always labeled:
 
@@ -338,58 +394,3 @@ response_typerevisited   0.7400     0.1600 258.00   4.625  < .001 ***
 - (Side note: in the main models, `participant_id` and `post_id` inside `(1 | ...)` are automatically treated as groups, so you don't need `factor()` there. You only need it when a bare id sits on the fixed-effects side, like `+ factor(post_id)`.)
 
 
-# 🚀 4. Reading the results
-
-## Final report — put the three side by side
-
-📝 **NOTE:** This is what *you* write up. Not R output.
-```
-RAW              +0.62   p = .002    d = 0.38
-LENGTH-ADJUSTED  +0.38   p = .041
-SENSITIVITY      +0.74   p < .001
-```
-
-
-## Decision table — what the combination means
-
-| Model 1 (raw) | Model 2 (length-adj) | Verdict |
-|---|---|---|
-| significant `+` | still significant `+` | **Strong support.** IC gain is real and not just longer writing. |
-| significant `+` | shrinks, still significant | **Support, partly length.** Some gain is writing more; a real effect remains. |
-| significant `+` | drops to ~0, not significant | **Weak.** The IC bump was mostly writing more. |
-| not significant | — | **No evidence** of an IC change. |
-
-Then Model 3 is the tie-breaker on trust: if it agrees with Model 1, you're solid. (`+` means positive `estimate`)
-
-Recall: **"Significant" always means `p < .05`.** Nothing else. It means "probably not luck." It does *not* mean big or important — that's what Cohen's d is for.
-
-
-## Example outputs (4 cases)
-
-**Case A — Real effect, survives length (supports RQ1)**
-```
-RAW              estimate = +0.62   p = .002    d = 0.38
-LENGTH-ADJUSTED  estimate = +0.38   p = .04
-```
-> Revisited scored 0.62 IC points higher. After matching for length it's still +0.38 and significant. Some of the gain is writing more — but not all. **Supports RQ1.**
-
-**Case B — Gain was mostly length (honest near-null)**
-```
-RAW              estimate = +0.55   p = .01     d = 0.32
-LENGTH-ADJUSTED  estimate = +0.08   p = .60
-```
-> The raw bump vanishes once you match for length. The IC gain came from people writing more, not reasoning deeper. **Weak / no real effect.**
-
-**Case C — Just noise**
-```
-RAW              estimate = +0.05   p = .78     d = 0.03
-```
-> Basically zero, and the p-value says it's easily luck. **No evidence for RQ1.** (No need to read Model 2 closely — there's nothing to explain.)
-
-**Case D — Fully robust**
-```
-RAW              estimate = +0.78   p < .001    d = 0.55
-LENGTH-ADJUSTED  estimate = +0.51   p = .008
-SENSITIVITY      estimate = +0.74   p < .001
-```
-> Big medium-sized gain, holds after length adjustment, holds when posts are fixed. **Strong, robust support for RQ1.**
