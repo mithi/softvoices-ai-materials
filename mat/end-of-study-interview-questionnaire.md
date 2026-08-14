@@ -1,5 +1,5 @@
 
-♥️ End-of-Study Questionnaire
+# ♥️ End-of-Study Questionnaire
 
 All 1–7 (disagree→agree) unless noted.
 
@@ -38,7 +38,7 @@ All 1–7 (disagree→agree) unless noted.
 - I've changed how I reply to people online.
 - What changed, briefly? `[open text]`
 
-### Trust (2 separate single items — do NOT combine)
+### Trust (2 separate single items — do NOT combine/average)
 - I trusted the agents' factual claims. (1–7)
 - I noticed the agents making mistakes. (1–7)
 - Describe any comment you flagged, and why. `[open text]`
@@ -92,5 +92,4 @@ Fixed core questions — follow interesting answers with probes.
 
 ### Notes
 - Pick one scale length and stick to it everywhere (1–7 for Likert, 1–9 only for the Paas effort item).
-- Flip the reverse-scored trust item before averaging.
 - Pilot-test the six per-session wordings — if "wasted effort" gets misread as "boring," tighten it.
