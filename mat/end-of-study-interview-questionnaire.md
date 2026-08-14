@@ -1,35 +1,41 @@
-
 # ♥️ End-of-Study Questionnaire
+ 
+## User Interface
 
-All 1–7 (disagree→agree) unless noted.
-
-## User Interface 
-
+**1–7** (disagree → agree)
+ 
 ### Effectiveness
 - The comments helped me think more carefully about posts.
 - The comments helped me notice angles I'd have missed.
 - Overall, this tool improved my thinking.
-
 ### Enjoyment
 - I found the sessions enjoyable.
 - I looked forward to seeing the agents' comments.
 - It was more pleasant than arguing in normal comment sections.
-
 ### Willingness to adopt
 - I'd use a tool like this if available.
 - I'd recommend it to a friend.
 - I'd want this built into apps I already use.
 
-### Productive vs. wasted effort
-- ***Productive:***
-	- The effort felt worthwhile. 
-	- It made me think productively. 
-	- The comments gave me something worth thinking about.
-- ***Wasted:***
-	- The tool often felt confusing.
-	- I spent effort on things that didn't matter.
-	- The layout/comments got in the way.
+ 
+## Cognitive Effort
 
+### **Total Mental Effort**
+- **(Paas, 1–9):** *"Across all the sessions, the mental effort I invested was:"* (1 = very, very low … 9 = very, very high)
+
+- - -
+
+**1–7** (disagree → agree)
+
+### Productive:
+- The effort felt worthwhile.
+- It made me think productively.
+- The comments gave me something worth thinking about.
+### Wasted:
+- The tool often felt confusing.
+- I spent effort on things that didn't matter.
+- The layout/comments got in the way.
+  
 ## Patterns
 
 ### Behavior change outside the study (3 items + open text)
