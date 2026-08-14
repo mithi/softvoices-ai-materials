@@ -47,8 +47,6 @@
 
 
 ![](./img/01_trends_small_multiples.png)
-![](./img/04_spaghetti_enjoyability.png)
-![](./img/06_means_heatmap.png)
 
 | . | . |
 |---|---|
