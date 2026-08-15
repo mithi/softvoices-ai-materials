@@ -17,7 +17,7 @@
 | enjoyability | 5.17 | 1.06 | 2 | 7 | 144 |
 | adoption | 4.09 | 1.12 | 2 | 7 | 144 |
 
-![](/img/02_spread_box_mean_sd.png)
+![](./img/02_spread_box_mean_sd.png)
 
 ## Trend across sessions 
 
