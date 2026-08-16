@@ -19,3 +19,12 @@ _For each agent, how useful was it for helping you think? 1 = Not useful, 7 = Ve
 
 - Which agent helped you most, and why? `[open text]`
 - Which agent helped you least, or annoyed you, and why? `[open text]`
+
+### Behavior change outside the study
+
+_How much do you agree? 1 = Strongly disagree, 4 = Neutral, 7 = Strongly agree._
+
+- Since taking part, I've noticed myself pausing before reacting to posts. `(1–7)`
+- Since taking part, I've questioned online claims more than I used to. `(1–7)`
+- Since taking part, I've changed how I reply to people online. `(1–7)`
+- If anything changed in how you use social media, what changed? `[open text]`
