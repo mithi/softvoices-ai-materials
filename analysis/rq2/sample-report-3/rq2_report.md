@@ -11,9 +11,12 @@ Unit of analysis is the **participant**, not the rating. Each participant's 6 se
 
 ## 1. Overall experience
 
-![Figure 1](./img/f1_overall_spread.png)
+![Figure 1](./f1_overall_spread.png)
 
-**How to read it.** Each coloured dot is one person's average across their 6 sessions — 24 dots per measure. The black diamond is the group mean; the whisker is ±1 SD (standard deviation — the typical distance from the mean). Wide spread = people disagreed. Tight spread = people converged.
+**How to read it.**
+- Each coloured dot is one person's average across their 6 sessions — 24 dots per measure.
+- The black diamond is the group mean;
+- the whisker is ±1 SD (standard deviation — the typical distance from the mean). Wide spread = people disagreed. Tight spread = people converged.
 
 **Reading of these data**
 
@@ -26,7 +29,7 @@ Unit of analysis is the **participant**, not the rating. Each participant's 6 se
 
 ## 2. Change across sessions
 
-![Figure 2](./img/f2_session_trend.png)
+![Figure 2](./f2_session_trend.png)
 
 **How to read it.** Line = mean of 24 participants at that session. Shaded band = 95% confidence interval (the range the true mean plausibly sits in). The slope is fitted per participant, then averaged; its CI is across the 24 participants. Every panel shows the **full scale** so a 0.3-point wiggle does not look like a cliff.
 
@@ -36,13 +39,13 @@ Unit of analysis is the **participant**, not the rating. Each participant's 6 se
 - **Enjoyability declines** (−0.16/session, CI −0.25 to −0.06 → roughly −0.8 over the six sessions). Session 1 is the outlier; sessions 2–6 are nearly level. Read as **novelty fading, then stabilising**, not as steady decay.
 - **Nothing here is a hypothesis test.** With 24 participants, single-item measures, and six timepoints, these slopes describe *this sample*. They are not evidence about repeated use in general.
 
-**Caveat worth one line in the paper.** Session and post are crossed by the 6×6 Latin square, so a "session effect" is not confounded with any particular post. But the same ratings can be re-plotted **by post**, and if post-to-post variation is large, that is the better explanation for the bumpiness above.
+**Important Caveat** Session and post are crossed by the 6×6 Latin square, so a "session effect" is not confounded with any particular post. But the same ratings can be re-plotted **by post**, and if post-to-post variation is large, that is the better explanation for the bumpiness above.
 
 ---
 
 ## 3. Do the light per-session items track the full end-of-study scales?
 
-![Figure 3](./img/f3_crosscheck.png)
+![Figure 3](./f3_crosscheck.png)
 
 **Why this exists.** The per-session questionnaire uses one item per construct to keep six sessions bearable. This figure checks whether that shortcut cost anything.
 
@@ -58,8 +61,6 @@ Unit of analysis is the **participant**, not the rating. Each participant's 6 se
 ---
 
 ## 4. Reliability of the end-of-study scales
-
-This is the one thing a figure cannot show, so it gets a table.
 
 **Cronbach's alpha** asks whether the 3 items in a scale move together enough to justify averaging them. The conventional bar is 0.70 — but alpha is penalised for having few items, so for 3-item scales the **mean inter-item correlation** (0.15–0.50 is healthy for a broad construct) is the fairer read.
 
@@ -79,10 +80,3 @@ _(Overall effort is a single Paas item — alpha does not apply.)_
 - **Adoption at 0.64 is not a failure.** Its mean inter-item r of 0.37 is perfectly respectable. "I'd use it," "I'd recommend it," and "I'd want it built into apps I use" are three genuinely different commitments, so they *should* hang together loosely.
 - **Keep averaging adoption. Flag it, don't fix it.** Report the alpha, note it is the least internally consistent scale, and let adoption conclusions carry that caveat. Do **not** drop the weakest item to push alpha over 0.70 — with 24 people that is fishing, and the boosted number would not survive replication.
 
----
-
-## Reporting notes
-
-- All RQ2 numbers are descriptive. Report means, SDs, and CIs; do not report p-values or use the word "significant."
-- Report n per session and how many participants completed all six (attrition affects every figure above).
-- Figures carry the numbers; tables appear only where a figure cannot (reliability). Means and SDs are printed directly on Figure 1 rather than duplicated in a table.
