@@ -1,8 +1,9 @@
 # RQ2 Example Report — User Experience of SoftVoicesAI
 
-> **Illustrative example only.** The attached sample output explicitly labels its data as fake/illustrative. The session means and end-of-study means below are taken from that sample. The participant-level dots in Figure 1 are additionally **simulated only to demonstrate the recommended visualization**, because the supplied example output does not contain the 24 participant-level six-session averages.
->
-> RQ2 concerns cognitive load and user experience: mental effort, productive/germane effort, wasted/extraneous effort, perceived effectiveness, enjoyability, and willingness to adopt. The research proposal states that these measures are summarized as averages, including trends across the six sessions, with the end-of-study questionnaire used as a check on the lighter per-session ratings. fileciteturn0file1L143-L157
+> **Fake Data Illustrative example only.** 
+
+
+> RQ2 concerns cognitive load and user experience: mental effort, productive/germane effort, wasted/extraneous effort, perceived effectiveness, enjoyability, and willingness to adopt. The research proposal states that these measures are summarized as averages, including trends across the six sessions, with the end-of-study questionnaire used as a check on the lighter per-session ratings.
 
 ---
 
@@ -25,16 +26,6 @@ A small reliability table should be added for the end-of-study multi-item scales
 
 ![Figure 1 — Overall participant-level experience across six sessions](rq2_fig1_overall_participant_distributions.png)
 
-### Matching table
-
-| Measure | Mean | SD |
-|---|---:|---:|
-| Germane / productive effort | 4.84 | 0.78 |
-| Extraneous / wasted effort | 2.55 | 0.81 |
-| Effectiveness | 4.56 | 0.80 |
-| Enjoyability | 5.17 | 0.78 |
-| Willingness to adopt | 4.09 | 0.80 |
-
 ### How to interpret
 
 Each dot represents **one participant's average across the six sessions**. The diamond shows the mean and the whisker shows ±1 SD.
@@ -49,24 +40,25 @@ The important cognitive-load interpretation is that **moderate mental effort is 
 
 **Do not infer population-level generalizability from these distributions.** With approximately 24 participants, the figure is primarily descriptive.
 
+
+### Matching table
+
+| Measure | Mean | SD |
+|---|---:|---:|
+| Germane / productive effort | 4.84 | 0.78 |
+| Extraneous / wasted effort | 2.55 | 0.81 |
+| Effectiveness | 4.56 | 0.80 |
+| Enjoyability | 5.17 | 0.78 |
+| Willingness to adopt | 4.09 | 0.80 |
+
 ---
 
 # 2. Trend across repeated sessions
 
+
 ## Figure 2 — 1–7 measures
 
 ![Figure 2 — Mean RQ2 ratings across Sessions 1–6](rq2_fig2_likert_trends.png)
-
-### Matching table
-
-|   Session |   Germane |   Extraneous |   Effectiveness |   Enjoyability |   Adoption |
-|----------:|----------:|-------------:|----------------:|---------------:|-----------:|
-|         1 |      4.88 |         2.83 |            4.42 |           5.79 |       3.92 |
-|         2 |      4.75 |         2.42 |            4.54 |           5.33 |       3.79 |
-|         3 |      4.58 |         2.75 |            4.54 |           5.12 |       4.21 |
-|         4 |      4.83 |         2.21 |            4.12 |           5.08 |       4.08 |
-|         5 |      4.92 |         2.71 |            4.92 |           4.71 |       4.29 |
-|         6 |      5.08 |         2.38 |            4.79 |           4.96 |       4.25 |
 
 ### How to interpret
 
@@ -89,22 +81,24 @@ The safest wording is therefore:
 
 That is stronger and more useful than turning every small fluctuation into a significance claim.
 
+
+### Matching table
+
+|   Session |   Germane |   Extraneous |   Effectiveness |   Enjoyability |   Adoption |
+|----------:|----------:|-------------:|----------------:|---------------:|-----------:|
+|         1 |      4.88 |         2.83 |            4.42 |           5.79 |       3.92 |
+|         2 |      4.75 |         2.42 |            4.54 |           5.33 |       3.79 |
+|         3 |      4.58 |         2.75 |            4.54 |           5.12 |       4.21 |
+|         4 |      4.83 |         2.21 |            4.12 |           5.08 |       4.08 |
+|         5 |      4.92 |         2.71 |            4.92 |           4.71 |       4.29 |
+|         6 |      5.08 |         2.38 |            4.79 |           4.96 |       4.25 |
+
+
 ---
 
 ## Figure 3 — Paas mental effort
 
 ![Figure 3 — Mean Paas mental effort across Sessions 1–6](rq2_fig3_paas_trend.png)
-
-### Matching table
-
-|   Session |   Paas mental effort |
-|----------:|---------------------:|
-|         1 |                 5.12 |
-|         2 |                 5.38 |
-|         3 |                 5.42 |
-|         4 |                 4.79 |
-|         5 |                 4.96 |
-|         6 |                 5    |
 
 ### How to interpret
 
@@ -118,6 +112,19 @@ The illustrative values stay near the middle of the scale:
 This suggests no large change in perceived total mental effort across repeated use.
 
 However, Paas effort alone cannot tell us whether that effort was good or bad. The interpretation should be paired with the germane/productive and extraneous/wasted measures.
+
+
+### Matching table
+
+|   Session |   Paas mental effort |
+|----------:|---------------------:|
+|         1 |                 5.12 |
+|         2 |                 5.38 |
+|         3 |                 5.42 |
+|         4 |                 4.79 |
+|         5 |                 4.96 |
+|         6 |                 5    |
+
 
 ---
 
@@ -141,16 +148,6 @@ I would avoid making six p-values the headline result. The design has approximat
 
 ![Figure 4 — Per-session average versus end-of-study assessment](rq2_fig4_session_vs_endstudy.png)
 
-### Matching table
-
-| Measure       |   Per-session average |   End-of-study |
-|:--------------|----------------------:|---------------:|
-| Germane       |                  4.84 |           4.9  |
-| Extraneous    |                  2.55 |           2.54 |
-| Effectiveness |                  4.56 |           4.46 |
-| Enjoyability  |                  5.16 |           5.38 |
-| Adoption      |                  4.09 |           4.14 |
-
 ### How to interpret
 
 The end-of-study questionnaire uses fuller multi-item versions of the RQ2 constructs, while each session uses one item per construct to minimize burden. fileciteturn0file1L143-L147
@@ -167,7 +164,17 @@ In the illustrative data, the two summaries are broadly similar:
 - Enjoyment: **5.17 vs. 5.38**
 - Adoption: **4.09 vs. 4.14**
 
-That is a useful cross-check, but the measures should **not** be treated as identical instruments. The per-session measure is a single item, while the end-of-study version combines three items for each scale. fileciteturn0file2L7-L23 fileciteturn0file2L33-L43
+That is a useful cross-check, but the measures should **not** be treated as identical instruments. The per-session measure is a single item, while the end-of-study version combines three items for each scale. 
+
+### Matching table
+
+| Measure       |   Per-session average |   End-of-study |
+|:--------------|----------------------:|---------------:|
+| Germane       |                  4.84 |           4.9  |
+| Extraneous    |                  2.55 |           2.54 |
+| Effectiveness |                  4.56 |           4.46 |
+| Enjoyability  |                  5.16 |           5.38 |
+| Adoption      |                  4.09 |           4.14 |
 
 ---
 
@@ -255,8 +262,6 @@ Because the sample is small and the study is a one-condition within-subject desi
 
 ---
 
-# Recommended final RQ2 package
-
 ### Main text
 
 **Figure 1:** overall participant-level distribution  
@@ -268,5 +273,3 @@ Because the sample is small and the study is a one-condition within-subject desi
 ### Supplementary material
 
 Optional spaghetti plot, heatmap, participant-level slope distributions, detailed per-session SDs, and cross-check correlations.
-
-This keeps the main RQ2 story readable while preserving the more exploratory analyses for readers who want them.
