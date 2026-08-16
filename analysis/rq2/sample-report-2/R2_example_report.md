@@ -2,8 +2,7 @@
 
 > **Fake Data Illustrative example only.** 
 
-
-> RQ2 concerns cognitive load and user experience: mental effort, productive/germane effort, wasted/extraneous effort, perceived effectiveness, enjoyability, and willingness to adopt. The research proposal states that these measures are summarized as averages, including trends across the six sessions, with the end-of-study questionnaire used as a check on the lighter per-session ratings.
+ RQ2 concerns cognitive load and user experience: mental effort, productive/germane effort, wasted/extraneous effort, perceived effectiveness, enjoyability, and willingness to adopt.
 
 ---
 
@@ -13,8 +12,7 @@ The main report uses **four figures and four matching tables**:
 
 1. **Overall participant-level distribution** for the five 1–7 measures.
 2. **Trend across Sessions 1–6** for the five 1–7 measures.
-3. **Paas mental-effort trend** shown separately because it uses a 1–9 scale.
-4. **Per-session average versus end-of-study assessment** for the five 1–7 measures.
+3. **Per-session average versus end-of-study assessment** for the five 1–7 measures.
 
 A small reliability table should be added for the end-of-study multi-item scales; it is not repeated as a graph because the alpha values are the information that needs to be reported.
 
@@ -26,7 +24,6 @@ A small reliability table should be added for the end-of-study multi-item scales
 
 ![Figure 1 — Overall participant-level experience across six sessions](rq2_fig1_overall_participant_distributions.png)
 
-### How to interpret
 
 Each dot represents **one participant's average across the six sessions**. The diamond shows the mean and the whisker shows ±1 SD.
 
@@ -34,11 +31,9 @@ This figure answers:
 
 > **How positive or negative was the overall experience, and how much did participants differ from one another?**
 
-In the illustrative data, enjoyment and productive effort are relatively high, wasted effort is relatively low, and adoption is more moderate.
+Enjoyment and productive effort are relatively high, wasted effort is relatively low, and adoption is more moderate.
 
-The important cognitive-load interpretation is that **moderate mental effort is not inherently bad**. RQ2 distinguishes productive effort from wasted effort: the desirable pattern is effort that feels worthwhile rather than effort caused by confusion or clutter. The per-session questionnaire makes this distinction explicitly. fileciteturn0file3L3-L8
-
-**Do not infer population-level generalizability from these distributions.** With approximately 24 participants, the figure is primarily descriptive.
+**=No population-level generalizability, Only 24 participants, descriptive only** 
 
 
 ### Matching table
@@ -58,29 +53,33 @@ The important cognitive-load interpretation is that **moderate mental effort is 
 
 ## Figure 2 — 1–7 measures
 
-![Figure 2 — Mean RQ2 ratings across Sessions 1–6](rq2_fig2_likert_trends.png)
+| . | . |
+|---|---|
+| ![Figure 2 — Mean RQ2 ratings across Sessions 1–6](rq2_fig2_likert_trends.png)
+ | ![Figure 3 — Mean Paas mental effort across Sessions 1–6](rq2_fig3_paas_trend.png) |
 
-### How to interpret
+
 
 This figure answers:
 
 > **Does the experience change as participants use SoftVoicesAI repeatedly?**
 
-The illustrative pattern is fairly stable for most measures, with a clearer downward movement in enjoyment.
-
-For example:
+Fairly stable for most measures, with a clearer downward movement in enjoyment.
 
 - Enjoyment declines from **5.79** in Session 1 to **4.96** in Session 6.
 - Effectiveness fluctuates but finishes above its Session 1 value.
 - Adoption remains relatively stable.
 - Extraneous effort stays comparatively low.
 
-The safest wording is therefore:
+> **The user experience was broadly stable across the six sessions, with enjoyment showing the clearest downward trend in the sR.**
 
-> **The user experience was broadly stable across the six sessions, with enjoyment showing the clearest downward trend in the illustrative data.**
+Paas mental effort is kept in a separate figure because the questionnaire uses a **1–9 scale for Paas**, whereas the other RQ2 session items use **1–7 scales**.
+The illustrative values stay near the middle of the scale:
 
-That is stronger and more useful than turning every small fluctuation into a significance claim.
+- Session 1: **5.12**
+- Session 6: **5.00**
 
+This suggests no large change in perceived total mental effort across repeated use.
 
 ### Matching table
 
@@ -94,26 +93,6 @@ That is stronger and more useful than turning every small fluctuation into a sig
 |         6 |      5.08 |         2.38 |            4.79 |           4.96 |       4.25 |
 
 
----
-
-## Figure 3 — Paas mental effort
-
-![Figure 3 — Mean Paas mental effort across Sessions 1–6](rq2_fig3_paas_trend.png)
-
-### How to interpret
-
-Paas mental effort is kept in a separate figure because the questionnaire uses a **1–9 scale for Paas**, whereas the other RQ2 session items use **1–7 scales**. fileciteturn0file3L10-L12
-
-The illustrative values stay near the middle of the scale:
-
-- Session 1: **5.12**
-- Session 6: **5.00**
-
-This suggests no large change in perceived total mental effort across repeated use.
-
-However, Paas effort alone cannot tell us whether that effort was good or bad. The interpretation should be paired with the germane/productive and extraneous/wasted measures.
-
-
 ### Matching table
 
 |   Session |   Paas mental effort |
@@ -125,12 +104,11 @@ However, Paas effort alone cannot tell us whether that effort was good or bad. T
 |         5 |                 4.96 |
 |         6 |                 5    |
 
-
 ---
 
 ## Should we report slopes and p-values?
 
-For this study, I would treat slopes as **exploratory descriptive summaries**, not as the centerpiece of RQ2.
+For this study, slopes as **exploratory descriptive summaries**, not as the centerpiece of RQ2.
 
 A useful supplementary statistic is:
 
@@ -138,7 +116,7 @@ A useful supplementary statistic is:
 
 The illustrative enjoyment slope of about −0.17 points per session corresponds to roughly a **0.87-point decrease from Session 1 to Session 6**.
 
-I would avoid making six p-values the headline result. The design has approximately 24 participants, six repeated sessions, six RQ2 outcomes, and single-item per-session measures. The proposal itself frames the RQ2 session analysis as summary/trend analysis rather than as a confirmatory hypothesis-testing framework. fileciteturn0file1L154-L157
+The design has approximately 24 participants, six repeated sessions, six RQ2 outcomes, and single-item per-session measures. 
 
 ---
 
@@ -148,23 +126,18 @@ I would avoid making six p-values the headline result. The design has approximat
 
 ![Figure 4 — Per-session average versus end-of-study assessment](rq2_fig4_session_vs_endstudy.png)
 
-### How to interpret
 
-The end-of-study questionnaire uses fuller multi-item versions of the RQ2 constructs, while each session uses one item per construct to minimize burden. fileciteturn0file1L143-L147
-
-This figure therefore asks:
+The end-of-study questionnaire uses fuller multi-item versions of the RQ2 constructs, while each session uses one item per construct to minimize burden.
 
 > **Does the fuller end-of-study assessment tell roughly the same story as the lightweight ratings collected after each session?**
 
-In the illustrative data, the two summaries are broadly similar:
+The two summaries are broadly similar:
 
 - Germane: **4.84 vs. 4.90**
 - Extraneous: **2.55 vs. 2.54**
 - Effectiveness: **4.56 vs. 4.46**
 - Enjoyment: **5.17 vs. 5.38**
 - Adoption: **4.09 vs. 4.14**
-
-That is a useful cross-check, but the measures should **not** be treated as identical instruments. The per-session measure is a single item, while the end-of-study version combines three items for each scale. 
 
 ### Matching table
 
@@ -192,13 +165,8 @@ A small table is preferable here because Cronbach's alpha is not something that 
 | Wasted effort | 3 | 0.xx | Report value; interpret in context |
 | Adoption | 3 | 0.64* | Lower internal consistency; interpret cautiously |
 
-\* The supplied illustrative output gives adoption α = 0.64 and the other example values as 0.78–0.86. Those values are illustrative, not study results. The end-of-study questionnaire contains three items for each of the corresponding multi-item scales. fileciteturn0file2L7-L23 fileciteturn0file2L33-L43
+\* The supplied illustrative output gives adoption α = 0.64 and the other example values as 0.78–0.86.
 
-### Important reporting change
-
-Do **not** label α ≥ .70 as "pass" and α < .70 as "fail."
-
-Instead:
 
 > **Report alpha and describe the degree of internal consistency.**
 
