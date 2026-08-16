@@ -43,13 +43,6 @@
 - I've changed how I reply to people online.
 - What changed, briefly? `[open text]`
 
-### Trust (2 separate single items — do NOT combine/average)
-- I trusted the agents' factual claims. (1–7)
-- I noticed the agents making mistakes. (1–7)
-- Describe any comment you flagged, and why. `[open text]`
-
-> Note: The first two items measure different things (trust level vs. catching errors), so they stay separate singles, scored as-is. Reverse-scoring only helps inside a multi-item scale, and there's no scale here.
-
 ### Role-level usefulness 
 
 (1=not useful, 7=very useful)
