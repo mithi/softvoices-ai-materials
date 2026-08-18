@@ -1,70 +1,122 @@
-# SoftVoicesAI — spoken script
+SoftVoicesAI - Final Spoken Script
 
-1049 words ≈ 7.0 min at a calm pace, leaving 60–90 s for the live demo on slide 7 — roughly 9 minutes in total. Same text sits in each slide's speaker notes.
+# Slide 1
 
----
+Good afternoon. I'm Shulamith Rivera Sevilla. Please call me Mithi. I'm a software engineer focused on user interfaces and experiences.
 
-**1 · Title — 0:00–0:23**
+My proposal is SoftVoicesAI. It is an interface that aims to help people think more critically about posts they see on social media.
 
-Good afternoon. I'm Shulamith Rivera Sevilla. Please call me Mithi. I'm a software engineer, and I work on user interfaces. My proposal is SoftVoicesAI. It's an interface that helps people think a little harder about the takes they see on social media. I'll spend most of my time on the design, a quick demo, and the study.
+Today, I'll focus on three things. I'll talk about the ideas behind its design, show you a quick demo of how it works, and then present the research questions and study plan.
 
-**2 · Related work — 0:23–0:55**
+# Slide 2
 
-First, where this comes from. A few groups have shown that AI can help us think, instead of thinking for us. One idea: have the AI ask questions rather than give answers. People catch bad logic better that way. Another: use several agents instead of one voice, so you compare views instead of trusting one. And a third: let the AI push back, like a debate partner. All promising. Almost none of it tried on social media, where people react fastest.
+The proposal is inspired by research exploring how AI can be used as a thinking partner, rather than simply as an answering machine. The papers on this slide explore that idea in different settings, including research-paper reading, research ideation, and group decision-making. Some have also shown the value of using multiple agents to introduce different perspectives.
 
-**3 · Objective — 0:55–1:27**
+These studies led me to wonder: could we bring the idea of an AI thinking partner into something more ordinary - the social-media posts?
 
-So here is my goal. Build an interface where several AI agents help you think more critically about a post you just read. Not to move you to any side. We don't push a view. You stay the judge. By more critically I mean three things. You see more than one side. You notice where those sides pull against each other. And you can put them together into something new. That last part is what I want to measure.
+# Slide 3
 
-**4 · Challenges — 1:27–2:00**
+The goal of SoftVoicesAI is to help users think more critically about the social-media posts they read. And it does so by using multiple AI agents. It is important to note that SoftVoicesAI doesn't push any specific viewpoint; it doesn't try to make you think a certain way. The goal is to encourage users to think more critically.
 
-Why is this hard? Two reasons. The place: feeds put us with people who already agree, and ranking pushes the angriest posts to the top. The mind: we decide fast, then look for reasons afterwards. And if you tell someone they are wrong, they dig in. In one study, people were paid to follow the other side for a month. They came out slightly more extreme. So there are two problems. What do you even say to someone. And how do you say it.
+What I mean by "thinking more critically" is  not treating an issue as simply good or bad. It means recognizing that there may be both harms and benefits, and those are case to case and depend on different factors, like the specific contexts and situations.
 
-**5 · Roles — 2:00–2:43**
+# Slide 4
 
-First, what to say. Each agent has one job — one angle you probably would not take on your own. One says your point back to you fairly, so you feel heard. One argues the other side as well as it can be argued. One asks who else this affects. One reminds us we have feared this before: Plato worried about writing. One points at the jump from the evidence to the conclusion. One asks if a single small study is enough. One notices loaded words like terrifying. And one asks what a vague word actually means. Not every angle fits every post, so the system picks.
+Thinking critically on social media is difficult.
 
-**6 · Dialogue — 2:43–3:22**
+First, platforms are incentivized to keep us engaged. As a result, our feeds prioritize posts that provoke a reaction and repeatedly show us views similar to our own.
 
-Second, how to say it. This part comes from research on good listening. Speak like a thoughtful friend, not a debate opponent. Keep it short and plain. Say what is fair in their view first. Give them something to think about instead of a verdict. Say maybe, not definitely. Ask instead of tell. And never make it about the person. Here is the difference. Instead of “those screen time studies are oversold” — “those numbers do look alarming, I get the worry. Though doomscrolling and calling a friend aren't really the same screen time, are they?”
+Second, people often decide by gut feel and find reasons afterward, rather than reasoning before deciding. And hearing, "You're wrong, and here's why," can also make us cling even more tightly to what we already believe.
 
-**7 · Pipeline & demo — 3:22–3:58**
+So SoftVoicesAI has to address two design problems: what to say - things that the user might not have thought about - and how to say them so that the user actually considers them and not shut them down.
 
-Here is how one session runs. You get a real post that people argued about. One question: what is this claiming, and what do you think. You write your take. Then the agents comment — on the post, and on what you wrote. Two at a time. You can tag any comment privately: raised something new, worth sitting with, shifted my view, didn't land. Or flag it if it looks false. The counts stay private, so nothing becomes a winning side. Then you write your answer again. Let me show you.
+# Slide 5
 
-**8 · Study design — 3:58–4:27**
+SoftVoicesAI has eight agents, each offering a specific thing the user may have overlooked. They consider questions such as: What is strongest in the user's own point? What would a well-argued opposing view look like? Whose perspective is missing? What does the evidence actually show? And is the language making the claim sound stronger than the evidence supports?
 
-The study. A small pilot first, three to five people: fix the prompts, train the scorers, see how long a session takes. Then the main study, about twenty-four people who use social media daily and say they want to think more critically. Session zero is consent and a practice run. Sessions one to six are one post each, on different days, in rotated order. Session seven is a questionnaire and an interview.
+# Slide 6
 
-**9 · Research questions — 4:27–4:53**
+The agents should sound less like someone trying to win an argument and more like a thoughtful friend.
 
-Three questions. First: is the second answer deeper than the first? Two people score every answer without knowing which is which. Second: how does it feel to use — is the effort useful or just confusing, is it enjoyable, would they keep using it. Third: what do people actually do — which agents get reactions, which get flagged, and what comes up in the interviews.
+A friend does not try to sound smart or begin by telling you that you are wrong. They try to understand how you reached your view, acknowledge what is reasonable in it, and then offer something you may not have considered.
 
-**10 · RQ1 analysis — 4:53–5:22**
+That means avoiding language that leaves the user feeling judged, corrected, or pushed.
 
-This is the first question. The numbers on screen are simulated. I wrote the analysis code and ran it on fake data, to check the pipeline works. What I would report is this: the raw difference; then the same difference after controlling for length, because second answers are simply longer; and then a version that treats the six posts as fixed. If it only held in the first row, I would say so.
+Reflection cannot be forced; the best the system can do is make it easier.
 
-**11 · RQ2 analysis — 5:22–5:42**
+# Slide 7
 
-For the second question, three pictures. One dot per person, so you see the spread and not just an average. The trend over six sessions, to see if the novelty wears off. And useful effort against wasted effort — I want people in the bottom right corner: useful, not confusing.
+Demo
+https://claude.ai/code/artifact/021464f8-a783-4565-9d27-e3f65febfffb
 
-**12 · RQ3 analysis — 5:42–6:01**
+# Slide 8
 
-The third question is descriptive. Which agents got which reactions. Whether shifted my view fades as people get used to them. And which roles people found useful at the end. Every flagged comment gets checked afterwards and sorted: a real error, a fair debate, or just disagreement.
+First, we will run a small pilot to refine the procedure and train the raters. For the main study, we will analyze about twenty-four active social-media users, using six carefully selected real posts.
 
-**13 · Limitations — 6:01–6:32**
+The study consists of eight short sessions, each lasting around ten to twenty minutes. Session zero covers consent, a background questionnaire, and a practice run.
 
-Now the honest part. There is only one version of the system, so I cannot tell you which piece did the work — the angles, the tone, or simply writing twice. That needs a follow-up study. The agents always appear in the same order, so role and position are mixed together. The per-session questions are single items. Everyone here already wants to think better. And I left out the most heated topics, which are the hardest ones.
+In sessions one through six, participants complete the full SoftVoicesAI pipeline with one post per session. Everyone sees all six posts, but in a counterbalanced order.
 
-**14 · Summary — 6:32–6:60**
+Session seven consists of an end-of-study questionnaire and an interview.
 
-To sum up. I am building an interface where several AI agents help people take a second look at what they read. Each one has its own angle, and each one speaks like a thoughtful friend. And I am testing whether that second look is actually deeper, how it feels to use, and what people do with it. Everything will be public. Thank you. I am happy to take questions.
+# Slide 9
 
----
+First, does integrative complexity (a measure of critical reflection) increase from the initial response to the revisited response? Two blind raters will score each response from one to seven.
 
-## Cuts if you run long
+Second, how do users experience the system? Does the effort feel productive or wasted? Is it effective and enjoyable, and would they use a system like this?
 
-- Slide 2: name one line of related work instead of three.
-- Slide 5: describe four agents, let the slide carry the rest.
-- Slide 12: drop the flag-checking sentence.
-- Slide 13: give two limitations, keep the rest for Q&A.
+Third, what patterns appear across the six sessions and eight roles? I will examine reactions, flags, response length, and interview themes.
+
+I have one hypothesis-testing question, followed by two descriptive and exploratory questions.
+
+# Slide 10
+
+The numbers here are simulated, not study results.
+
+The three models ask three versions of the same question.
+
+First: does a participant's revisited response score higher than their own initial response? The model also accounts for the fact that some posts naturally produce more complex responses than others.
+
+Second: does that difference remain after accounting for response length? If it becomes smaller, longer answers may explain part of the increase.
+
+Third: does the conclusion change if we treat these six posts as six specific cases, rather than as a random sample of social-media posts?
+
+We would show all three results so it is clear how robust - or sensitive - the finding is.
+
+# Slide 11
+
+The second question is about how it feels to use the system. Again, this is fake data.
+
+Chart 1 compares productive effort with wasted effort: ideally, using the system requires thought without creating unnecessary confusion.
+
+Chart 2 shows the variation between participants' ratings.
+
+Chart 3 follows each measure across six sessions, so we can see whether the experience changes with repeated use - for example, whether the novelty wears off or the system becomes easier to use.
+
+# Slide 12
+
+The third question is exploratory. It asks what people actually do with the system across repeated sessions.
+
+We will examine how often participants react, which reactions each role receives, whether revisited responses become longer, and how these patterns change over time.
+
+We will compare that behavior with what participants say in the final questionnaire and interview.
+
+Flagged comments will also be checked afterward and classified as a factual error, a debatable claim, or simple disagreement.
+
+# Slide 13
+
+This study evaluates SoftVoicesAI as a whole. If responses improve, we cannot tell whether that is because of the agent roles, the communication style, or simply writing a second response. That will require a controlled follow-up.
+
+Because the agents always appear in the same order, we also cannot separate the effect of the role from its position.
+
+The short questionnaires reduce participant burden but may be less reliable, and some inaccurate agent comments may go unnoticed. Also, we include only participants who report that they want to think more critically.
+
+Finally, this first study leaves out highly charged topics, especially those involving identity.
+
+# Slide 14
+
+To summarize, this research contributes the SoftVoicesAI interface; an evaluation of its association with integrative complexity, user experience, and behavior; and public design and study materials.
+
+The larger question behind the project is whether we can design human-AI interfaces that do not think for people, but help people do more of their own thinking.
+
+Thank you. I am happy to take questions.
